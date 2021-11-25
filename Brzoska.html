@@ -1,0 +1,24 @@
+<html>
+<head>
+       <script>
+       var obrazek = new Array ("22.jpg","11.jpg","55.jpg");
+       var numer_obrazka=1;
+       var liczba_obrazkow=obrazek.lenght;
+       function Nastepny(){
+           if(numer_obrazka<liczba_obrazkow){
+               numer_obrazka++
+               document.obraz.src=obrazek[numer_obrazka-1]
+            }else if(numer_obrazka<liczba_obrazkow){
+                numer_obrazka--
+                
+            }
+            document.obraz.src=obrazek[numer_obrazka+1]
+            }
+       </script>
+       </head>
+       <body>
+       
+       <input type="button" name="obraz" onClick="Nastepny()" value="Nastepny">
+       <img src="01.jpg" name="obraz">
+       </body>
+    </html>
